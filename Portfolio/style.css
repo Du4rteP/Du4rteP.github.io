@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5vw;
+}
+
+.hero h1 {
+    font-size: clamp(5rem, 15vw, 15rem);
+    line-height: 0.8;
+    letter-spacing: -0.08em;
+}
+
+.hero a {
+    color: white;
+    margin-top: 50px;
+}
+
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+
+    padding: 10vw 5vw;
+}
+
+.about img {
+    width: 100%;
+    display: block;
+}
+
+.about h2 {
+    font-size: clamp(2rem, 5vw, 5rem);
+    line-height: 1;
+}
+
+
+.projects {
+    padding: 10vw 5vw;
+}
+
+.project {
+    margin-top: 8vw;
+}
+
+.project img,
+.project video {
+    width: 100%;
+    display: block;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0;
+}
+
+
+footer {
+    padding: 15vw 5vw;
+}
+
+footer h2 {
+    font-size: clamp(3rem, 10vw, 10rem);
+}
+.project {
+    position: relative;
+}
+
+.project::after {
+    content: "";
+
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    left: var(--mouse-x);
+    top: var(--mouse-y);
+
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background: white;
+    opacity: 0.05;
+
+    pointer-events: none;
+}
