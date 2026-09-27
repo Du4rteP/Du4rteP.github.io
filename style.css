@@ -293,7 +293,9 @@ body::before {
 .about h2::first-letter {
     color: red;
 }
-
+.orange{
+    color: orange;
+}
 .about p:not(.label) {
     max-width: 500px;
 
