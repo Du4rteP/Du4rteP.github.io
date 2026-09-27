@@ -15,7 +15,9 @@ body {
     overflow-x: hidden;
     cursor: url(/assets/images/pointer.png), auto;
 }
-
+body, a{
+    cursor: url(/assets/images/pointer.png), auto;
+}
 /* -------------------------
    GLOBAL
 ------------------------- */
