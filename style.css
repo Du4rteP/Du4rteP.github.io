@@ -128,7 +128,7 @@ footer h2 {
     border-radius: 50%;
 
     background: red;
-    opacity: 0.10;
+    opacity: 0.5;
 
     pointer-events: none;
 }
