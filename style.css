@@ -8,9 +8,6 @@ body {
     color: white;
     font-family: Arial, sans-serif;
 }
-#email:hover{
-    color: white
-}
 #email{
     color: red
 }
@@ -56,11 +53,11 @@ body {
 }
 
 .hero a {
-    color: white;
+    color: red;
     margin-top: 50px;
 }
-.hero a:hover {
-    color: red;
+a:hover{
+    color: white
 }
 
 .about {
