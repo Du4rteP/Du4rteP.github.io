@@ -296,6 +296,9 @@ body::before {
 .orange{
     color: orange;
 }
+.yellow{
+    color:yellow;
+}
 .about p:not(.label) {
     max-width: 500px;
 
