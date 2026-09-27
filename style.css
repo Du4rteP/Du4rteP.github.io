@@ -331,8 +331,8 @@ body::before {
     letter-spacing: -0.07em;
 }
 
-.about h2::first-letter {
-    color: red;
+.red{
+    color:red;
 }
 .orange{
     color: orange;
