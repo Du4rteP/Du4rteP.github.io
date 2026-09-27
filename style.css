@@ -59,7 +59,9 @@ body {
     color: white;
     margin-top: 50px;
 }
-
+.hero a:hover {
+    color: red;
+}
 
 .about {
     display: grid;
