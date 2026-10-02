@@ -748,3 +748,96 @@ footer.visible {
 
     transform: translateY(0);
 }
+.portrait-slideshow {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.portrait-slideshow button {
+    border: none;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    font-size: 20px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+    background: red;
+}
+
+.slide-dots {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    opacity: 0.5;
+}
+
+.dot.active {
+    opacity: 1;
+    background: red;
+}

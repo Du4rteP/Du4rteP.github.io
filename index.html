@@ -47,10 +47,49 @@
 
     <div id="about" class="about-image">
 
+        <div class="portrait-slideshow">
+
+    <div class="slides">
+
         <img
             src="assets/images/portrait.jpg"
             alt="Portrait of Duarte Pereira"
+            class="slide active"
         >
+
+        <img
+            src="assets/images/portrait-2.jpg"
+            alt="Duarte Pereira"
+            class="slide"
+        >
+
+        <img
+            src="assets/images/portrait-3.jpg"
+            alt="Duarte Pereira"
+            class="slide"
+        >
+
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">
+        ←
+    </button>
+
+    <button class="next" onclick="changeSlide(1)">
+        →
+    </button>
+
+    <div class="slide-dots">
+
+        <button onclick="goToSlide(0)" class="dot active"></button>
+
+        <button onclick="goToSlide(1)" class="dot"></button>
+
+        <button onclick="goToSlide(2)" class="dot"></button>
+
+    </div>
+
+</div>
 
     </div>
 
@@ -88,12 +127,12 @@
     <article class="project">
 
         <div class="project-media">
-            <a href=""></a>
+            <a href="/projects/pif.html">
             <img
                 src="assets/images/pif2026.jpeg"
                 alt="Project One"
             >
-
+            </a>
         </div>
 
         <div class="project-info">
@@ -112,7 +151,7 @@
 
 
     <article class="project">
-
+        <a href="projects/project-02.html">
         <div class="project-media">
 
             <video autoplay muted loop playsinline>
@@ -123,7 +162,7 @@
                 >
 
             </video>
-
+        </a>
         </div>
 
         <div class="project-info">
